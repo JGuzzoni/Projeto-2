@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  /*background: linear-gradient(90deg, rgba(255,0,173,1) 0%, rgba(0,255,248,1) 100%);*/
+  min-height: 100vh;
+}
+
+.page {
+  margin: 0 auto;
+  width: 1000px;
+  padding-top: 65px;
+
+  /*border: 1px solid red; borda da "caixa"
+  padding: 88px; preenchimento interno da "caixa"
+  margin: 80px; margem fora da "caixa" */
+}
+
+nav {
+  display: flex;
+  /*coloca os elementos em linha*/
+  justify-content: space-between;
+  /*mantem um elemento de um lado e outro do outro*/
+  align-items: center;
+  /*deixa os elementos alinhados*/
+  margin-bottom: 55px;
+}
+
+ul {
+  display: flex;
+  gap: 48px;
+  /*espaço entre os elementos, pode usar fap quando tem o "flex"*/
+  list-style: none;
+  /* tira as "bolinhas" da lista*/
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  color: #1F1534;
+  text-decoration: none;
+  opacity: 0.5; /* deixa o texto com opacidade*/
+}
+
+/*pseudo classes*/
+ul li a:hover {
+  /* quando passar o mouse em cima*/
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1,
+ul {
+  font-family: 'Mulish', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: black;
+  font-weight: normal;
+  width: 490px;
+}
+
+h1 span {
+  font-weight: bold;
+  color: #89C5CC;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin: 40px 0;
+  width: 438px;
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  color: #F9F9F9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 32px 15px;
+  gap: 10px; /*epaço entre os elementos*/
+  background: #69B99D;
+  border-radius: 4px; /* borda arredondada*/
+  border: none;
+  cursor: pointer; /*maozinha do mouse*/
+}
+
+button:hover{
+  background: #46a584;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+  color: black;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
